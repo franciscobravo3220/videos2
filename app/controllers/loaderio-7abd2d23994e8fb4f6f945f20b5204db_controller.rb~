@@ -1,0 +1,4 @@
+class LoaderiosController < ApplicationController
+  def index
+  end
+end

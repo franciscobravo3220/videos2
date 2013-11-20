@@ -3,5 +3,5 @@ Picturesque::Application.routes.draw do
 
   resources :galleries
   resources :paintings
-	resources :"loaderio-7abd2d23994e8fb4f6f945f20b5204db"
+	resources :loaderio-7abd2d23994e8fb4f6f945f20b5204db
 end
