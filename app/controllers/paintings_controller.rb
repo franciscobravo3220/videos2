@@ -1,5 +1,9 @@
 class PaintingsController < ApplicationController
-  def new
+	
+	def loaderio_7abd2d23994e8fb4f6f945f20b5204dbs
+		flash[:notice] = "loaderio_7abd2d23994e8fb4f6f945f20b5204dbs"
+	end   
+	def new
     @painting = Painting.new(:gallery_id => params[:gallery_id])
   end
 

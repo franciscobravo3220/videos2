@@ -10,9 +10,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110213051146) do
+ActiveRecord::Schema.define(:version => 20131120171932) do
 
   create_table "galleries", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "loaderio_1s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "loaderio_7abd2d23994e8fb4f6f945f20b5204dbs", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ones", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"

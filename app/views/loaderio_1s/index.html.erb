@@ -1,0 +1,23 @@
+<h1>Listing loaderio_1s</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @loaderio_1s.each do |loaderio_1| %>
+  <tr>
+    <td><%= loaderio_1.name %></td>
+    <td><%= link_to 'Show', loaderio_1 %></td>
+    <td><%= link_to 'Edit', edit_loaderio_1_path(loaderio_1) %></td>
+    <td><%= link_to 'Destroy', loaderio_1, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Loaderio 1', new_loaderio_1_path %>
