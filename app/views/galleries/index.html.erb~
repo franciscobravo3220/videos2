@@ -1,0 +1,17 @@
+<% title "VideoCollector Uniandes" %>
+
+<p>Esta página esta creada para mostrar los videos que suben los usuarios.</p>
+
+
+<% for gallery in @galleries %>
+  <div class="gallery">
+    <h2><%= link_to gallery.name, gallery %></h2>
+    Paintings: <%= gallery.paintings.size %>
+  </div>
+<% end %>
+
+<p><%= link_to "New Gallery", new_gallery_path %></p>
+<footer>
+Página creada durante el contenido del curso de desarrollo de Aplicaciones Cloud<br>
+fj.bravo31@uniandes.edu.co
+<footer>

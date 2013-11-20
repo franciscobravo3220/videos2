@@ -1,0 +1,5 @@
+<% title "Subir Nuevo Video" %>
+
+<%= render 'form' %>
+
+<!--<p><%= link_to "Regresar al Index", @painting.gallery %></p>-->

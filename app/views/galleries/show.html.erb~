@@ -1,0 +1,21 @@
+<% title "VideoCollector Uniandes" %>
+
+<p>Esta página esta creada para mostrar los videos que suben los usuarios.</p>
+
+<div id="paintings">
+  <% for painting in @gallery.paintings %>
+    <div class="painting">
+      <%= image_tag painting.image_url(:thumb) if painting.image? %>
+      <div class="name"><%= painting.name %></div>
+      <div class="actions">
+        <%= link_to "Editar", edit_painting_path(painting) %> |
+        <%= link_to "Eliminar", painting, :confirm => 'Are you sure?', :method => :delete %>
+      </div>
+    </div>
+  <% end %>
+  <div class="clear"></div>
+</div>
+
+<p>
+  <%= link_to "Agregar Un video", new_painting_path(:gallery_id => @gallery) %> |
+</p>
