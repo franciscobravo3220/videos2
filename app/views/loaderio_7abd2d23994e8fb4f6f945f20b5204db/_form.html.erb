@@ -1,0 +1,21 @@
+<%= form_for(@loaderio_7abd2d23994e8fb4f6f945f20b5204db) do |f| %>
+  <% if @loaderio_7abd2d23994e8fb4f6f945f20b5204db.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@loaderio_7abd2d23994e8fb4f6f945f20b5204db.errors.count, "error") %> prohibited this loaderio_7abd2d23994e8fb4f6f945f20b5204db from being saved:</h2>
+
+      <ul>
+      <% @loaderio_7abd2d23994e8fb4f6f945f20b5204db.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
